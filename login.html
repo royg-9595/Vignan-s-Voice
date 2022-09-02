@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIGNAN'S VOICE</title>
+  <style>
+    body {
+      background-color: #679da8;
+    }
+
+    .a {
+      background-color: #ebf3f2;
+      padding: 182px;
+      width: 71px;
+      height: 5px;
+      border: 5px solid #cf4c78;
+      margin-left: 400px;
+      margin-top: 70px;
+    }
+
+    .b {
+      margin-top: -111px;
+      margin-left: -25px;
+    }
+
+    .c {
+      margin-left: -25px;
+    }
+
+    form {
+      border: 3px solid #163255;
+      height: 539px;
+    }
+
+    /* Full-width inputs */
+    input[type=text],
+    input[type=password] {
+      width: 266%;
+      padding: 12px 20px;
+      margin: -33px -26px;
+display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #163255;
+      color: white;
+      padding: 14px 20px;
+      margin: 24px 0;
+      border: none;
+      cursor: pointer;
+      width: 175%;
+
+    }
+
+    /* Add a hover effect for buttons */
+    button:hover {
+      opacity: 0.8;
+    }
+
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    /* Avatar image */
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+    }
+
+    /* The "Forgot password" text */
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<h1 style="text-decoration-color: white">
+  <center>
+    VIGNAN'S VOICE
+  </center>
+</h1>
+  <script>
+    function fun() {
+      var name = document.f1.username.value;
+      var pass = document.f1.password.value;
+
+      if (name == "Mam" ||"Vignan" && pass == "welcome"|| "CSE2") {
+        return true;
+      }
+      else {
+        alert("Enter correct id and password!");
+        return false;
+      }
+    }
+
+  </script>
+  <form action="http://localhost:3000/" name="f1" onsubmit="return fun()">
+    <div class="a">
+      <h3 div class="b" id="bb">username: </h3> <input type="text" name="username" id="username"
+        placeholder="Enter Username" required><br>
+      <h3 div class="c"> password:</h3><input type="password" name="password" id="password" placeholder="Enter Password"
+        required><br>
+      <button type="submit" onclick=fun()>Login</button>
+    </div>
+
+  </form>
+
+
+</body>
+
+</html>
